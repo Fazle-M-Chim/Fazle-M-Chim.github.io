@@ -1,61 +1,96 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #fff;
 }
 
 header {
-    background-color: #0078d7;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-nav {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-nav ul li a:hover {
-    background-color: #575757;
-}
-
-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #0d1b2a;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+header .logo h1 {
+    font-size: 1.5em;
+    color: #ff00ff; /* Adjust the color if needed */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff00ff;
+}
+
+header .social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+header .social-icons a:hover {
+    color: #ff00ff;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.intro {
+    max-width: 60%;
+}
+
+.intro h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.intro a {
+    color: #ff00ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.profile-pic img {
+    width: 500px; /* Increase the size of the image */
+    border-radius: 10px;
+    border: 5px solid #080808; /* Change the border color to black */
+    transition: all 0.3s ease;
+}
+
+.profile-pic img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
 }
