@@ -5,26 +5,30 @@
     box-sizing: border-box;
 }
 
+/* Body Styles */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-    color: #fff;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); /* Background gradient */
+    color: #fff; /* Default text color */
 }
 
+/* Header Styles */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #0d1b2a;
+    background-color: #0d1b2a; /* Header background color */
 }
 
+/* Logo Styles */
 header .logo h1 {
     font-size: 1.5em;
-    color: #ff00ff; /* Adjust the color if needed */
+    color: #ff0000; /* Logo color */
 }
 
+/* Navigation Styles */
 header nav ul {
     list-style: none;
     display: flex;
@@ -35,27 +39,29 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #fff; /* Navigation link color */
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; /* Smooth transition on hover */
 }
 
 header nav ul li a:hover {
-    color: #ff00ff;
+    color: #ff0000; /* Hover color for navigation links */
 }
 
+/* Social Icons Styles */
 header .social-icons a {
-    color: #fff;
+    color: #fff; /* Social icons color */
     text-decoration: none;
     margin-left: 10px;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; /* Smooth transition on hover */
 }
 
 header .social-icons a:hover {
-    color: #ff0000;
+    color: #ff0000; /* Hover color for social icons */
 }
 
+/* Hero Section Styles */
 .hero-section {
     display: flex;
     justify-content: space-between;
@@ -63,6 +69,7 @@ header .social-icons a:hover {
     padding: 50px;
 }
 
+/* Introduction Text Styles */
 .intro {
     max-width: 60%;
 }
@@ -70,7 +77,7 @@ header .social-icons a:hover {
 .intro h1 {
     font-size: 3em;
     margin-bottom: 20px;
-    color: #fff;
+    color: #fff; /* Main heading color */
 }
 
 .intro p {
@@ -79,18 +86,23 @@ header .social-icons a:hover {
 }
 
 .intro a {
-    color: #ff00ff;
+    color: #fffcfc; /* Change email link color to black */
     text-decoration: none;
     font-weight: bold;
 }
 
+/* Profile Picture Styles */
+.profile-pic {
+    margin-left: 40px; /* Move the image to the right */
+}
+
 .profile-pic img {
     width: 500px; /* Increase the size of the image */
-    border-radius: 10px;
-    border: 5px solid #080808; /* Change the border color to black */
-    transition: all 0.3s ease;
+    border-radius: 10px; /* Rounded corners */
+    border: none; /* Remove border */
+    transition: all 0.3s ease; /* Smooth transition on hover */
 }
 
 .profile-pic img:hover {
-    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    transform: scale(1.15); /* Slightly enlarge the image on hover */
 }
