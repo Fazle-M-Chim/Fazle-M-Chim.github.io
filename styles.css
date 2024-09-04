@@ -22,10 +22,21 @@ header {
     background-color: #0d1b2a; /* Header background color */
 }
 
+header .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  header .logo .logo-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
 /* Logo Styles */
 header .logo h1 {
     font-size: 1.5em;
-    color: #ff0000; /* Logo color */
+    color: #ffffff; /* Logo color */
 }
 
 /* Navigation Styles */
