@@ -9,8 +9,8 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); /* Background gradient */
-    color: #fff; /* Default text color */
+    background-color: #f0f8ff; /* Light blue-tinted background */
+    color: #333; /* Darker text color for contrast */
 }
 
 /* Header Styles */
@@ -18,25 +18,40 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #0d1b2a; /* Header background color */
+    padding: 15px 20px;
+    background: linear-gradient(45deg, #83a4d4, #b6fbff);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+header:hover {
+    background: linear-gradient(45deg, #b6fbff, #83a4d4); /* Reverse gradient on hover */
 }
 
 header .logo {
     display: flex;
     align-items: center;
-  }
+}
   
-  header .logo .logo-icon {
-    width: 30px;
-    height: 30px;
+header .logo .logo-icon {
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
-  }
+    transition: transform 0.3s ease;
+}
+
+header .logo:hover .logo-icon {
+    transform: rotate(360deg);
+}
 
 /* Logo Styles */
 header .logo h1 {
-    font-size: 1.3em;
-    color: #ffffff; /* Logo color */
+    font-size: 1.5em;
+    color: #1e3c72; /* Darker blue for logo text */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Subtle text shadow */
 }
 
 /* Navigation Styles */
@@ -50,26 +65,32 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff; /* Navigation link color */
+    color: #1e3c72; /* Darker blue for nav links */
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease; /* Smooth transition on hover */
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 15px;
 }
 
 header nav ul li a:hover {
-    color: #ff0000; /* Hover color for navigation links */
+    color: #fff;
+    background-color: #1e3c72;
+    transform: translateY(-3px);
 }
 
 /* Social Icons Styles */
 header .social-icons a {
-    color: #fff; /* Social icons color */
+    color: #1e3c72; /* Darker blue for social icons */
     text-decoration: none;
-    margin-left: 10px;
-    transition: color 0.3s ease; /* Smooth transition on hover */
+    margin-left: 15px;
+    transition: all 0.3s ease;
+    font-size: 1.2em;
 }
 
 header .social-icons a:hover {
-    color: #ff0000; /* Hover color for social icons */
+    color: #fff;
+    transform: scale(1.2);
 }
 
 /* Hero Section Styles */
@@ -88,7 +109,7 @@ header .social-icons a:hover {
 .intro h1 {
     font-size: 3em;
     margin-bottom: 20px;
-    color: #fff; /* Main heading color */
+    color: #1e3c72; /* Darker blue for main heading */
 }
 
 .intro p {
@@ -97,23 +118,31 @@ header .social-icons a:hover {
 }
 
 .intro a {
-    color: #fffcfc; /* Change email link color to black */
+    color: #2a5298; /* Blue for email link */
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.intro a:hover {
+    color: #1e3c72;
+    text-decoration: underline;
 }
 
 /* Profile Picture Styles */
 .profile-pic {
-    margin-left: 40px; /* Move the image to the right */
+    margin-left: 40px;
 }
 
 .profile-pic img {
-    width: 500px; /* Increase the size of the image */
-    border-radius: 10px; /* Rounded corners */
-    border: none; /* Remove border */
-    transition: all 0.3s ease; /* Smooth transition on hover */
+    width: 500px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .profile-pic img:hover {
-    transform: scale(1.15); /* Slightly enlarge the image on hover */
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
