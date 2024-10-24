@@ -1,0 +1,95 @@
+/* Blog Post Styles */
+.post-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 50px;
+    font-family: 'Arial', sans-serif;
+}
+
+.blog-post {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+}
+
+.post-header {
+    margin-bottom: 30px;
+}
+
+.post-header h1 {
+    font-size: 3em;
+    color: #1e3c72;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.post-meta {
+    color: #666;
+    font-size: 1.1em;
+}
+
+.post-content {
+    line-height: 1.6;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.post-content h2 {
+    color: #1e3c72;
+    margin: 40px 0 20px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.post-content p {
+    margin-bottom: 20px;
+}
+
+.post-content ul {
+    margin: 20px 0;
+    padding-left: 40px;
+}
+
+.post-content li {
+    margin-bottom: 15px;
+}
+
+.post-footer {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid #eee;
+}
+
+.back-to-blog {
+    color: #2a5298;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.back-to-blog:hover {
+    transform: translateX(-5px);
+    color: #1e3c72;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .post-container {
+        padding: 0 20px;
+    }
+
+    .blog-post {
+        padding: 30px;
+    }
+
+    .post-header h1 {
+        font-size: 2.5em;
+    }
+
+    .post-content {
+        font-size: 1.1em;
+    }
+}
