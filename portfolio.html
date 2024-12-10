@@ -1,53 +1,83 @@
-<!-- projects.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>FM - Projects & Experience</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazlemalak Chimthanawala - Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="projects-styles.css">
+    <link rel="stylesheet" href="blog-styles.css">
 </head>
 <body>
-    <div class="projects-container">
-        <section class="projects-section">
-            <h2>Computer Science Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Project Title</h3>
-                    <p class="project-description">Brief project description</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">JavaScript</span>
-                    </div>
-                </div>
-                <!-- Add more project cards as needed -->
-            </div>
-        </section>
+    <header>
+        <div class="logo">
+            <img src="favicon.svg" alt="Logo" class="logo-icon">
+            <h1><a href="index.html">Fazlemalak Chimthanawala</a></h1>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="blog-page.html">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="Chimthanawala,Fazlemalak.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
 
-        <section class="research-section">
-            <h2>Research Experience</h2>
-            <div class="research-card">
-                <h3>Research Assistant Position</h3>
-                <p class="duration">Duration: Fall 2023 - Present</p>
-                <p class="description">Research description and responsibilities</p>
-                <div class="papers">
-                    <h4>Published Papers</h4>
-                    <ul class="papers-list">
-                        <li>Paper Title (2024)</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/fazlemalak-chimthanawala/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Fazle-M-Chim" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:fazlemalak.asif@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div> 
+    </header>
 
-        <section class="fraternity-section">
-            <h2>Fraternity Leadership</h2>
-            <div class="frat-card">
-                <h3>Fraternity Name</h3>
-                <p class="position">Position Held</p>
-                <p class="duration">Duration</p>
-                <p class="achievements">Key achievements and responsibilities</p>
-            </div>
-        </section>
-    </div>
+    <main class="blog-container">
+        <h1 class="blog-title">Portfolio</h1>
+        
+        <div class="blog-grid">
+            <article class="blog-card">
+                <div class="blog-card-image">
+                    <img src="Projects images.png" alt="Blog post thumbnail">
+                </div>
+                <div class="blog-card-content">
+                    <h2><a href="Programming RA blog-post-template.html" style="text-decoration: none; color: inherit;">
+                        Technical Projects</a></h2>
+                    <p class="blog-excerpt">
+                        Projects completed as part of my undergraduate program at Penn State, my internship 
+                        and personal projects.
+                    </p>
+                    <a href="Programming RA blog-post-template.html" class="read-more">Read More →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-image">
+                    <img src="psu_images.jpeg" alt="Blog post thumbnail">
+                </div>
+                <div class="blog-card-content">
+                    <h2><a href="Campus resources blog-post-template.html" style="text-decoration: none; color: inherit;">Resident Assistant</a></h2>
+                    <p class="blog-excerpt">
+                        My experience as an Resident Assistant, including programs hosted, papers written 
+                        and my theories about student development.
+                    </p>
+                    <a href="Campus resources blog-post-template.html" class="read-more">Read More →</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-image">
+                    <img src="zeta-psi.jpg" alt="Blog post thumbnail">
+                </div>
+                <div class="blog-card-content">
+                    <h2><a href="Campus resources blog-post-template.html" style="text-decoration: none; color: inherit;">Zeta Psi</a></h2>
+                    <p class="blog-excerpt">
+                        My experience as a founding member for the rechartering of the Pi Sigma chapter of Zeta Psi fraternity
+                        at Penn State.
+                    </p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </article>
+        </div>
+    </main>
 </body>
 </html>
